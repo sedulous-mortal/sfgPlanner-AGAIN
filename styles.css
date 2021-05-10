@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+td, tr {
+    padding: 5vh;
+    border: 1px solid #333;
+}
+
+.hero-text {
+    font-weight: 900;
+    color: rgb(14, 92, 14);
+}
+
+.garden {
+    background-color: #333;
+    width: 80vw;
+    height: 60vh;
+    margin-bottom: 6vh;
+}
+
+.square {
+    background-color: sienna;
+    width: 3vw; 
+    height: 3vh;
+    cursor: move;
+}
+
+.square:hover{
+    background-color: orange;
+    transition: background-color .3s;
+}
