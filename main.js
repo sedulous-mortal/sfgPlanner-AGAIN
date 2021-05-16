@@ -34,14 +34,14 @@ function successFunction(data) {
             )
             // try to add the hovercard based on csv file
             var hoverCardMainContent = `<p>${rowCells[rowCell]}</p>`;
-            // TODO: FIX THE BROKEN HOVERCARD CONTENT
-            // let thingToParse= "." + rowCells[rowCell].toString()
-            // // assign the hoverCard functionality to all squares
-            // $(thingToParse).hovercard({
-            //     detailsHTML: hoverCardMainContent,
-            //     width: 400,
-            //     cardImgSrc: `./${rowCells[rowCell+2]}`
-            // })
+            // TODO: Fix alignment of HOVERCARD CONTENT to not be top of .container
+            let thingToParse= "." + rowCells[rowCell].toString()
+            // assign the hoverCard functionality to all squares
+            $(thingToParse).hovercard({
+                detailsHTML: hoverCardMainContent,
+                width: 400,
+                cardImgSrc: `./${rowCells[rowCell+3]}`
+            })
           }
           // read from CSV the left and top values in X and Y columns
           if(rowCell % 2 === 0 && rowCell % 4 !== 0){
